@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>학생 성적 구하기</title>
+</head>
+<body>
+<!-- 이름, 국,영,수,총점,평균,등급 -->
+
+학생 [[${st1.name}]]의 성적 = 국어:[[${st1.kor}]], 영어:[[${st1.eng}]], 수학:[[${st1.mat}]], 총점:[[${st1.tot}]], 평균:[[${st1.avg}]], 등급:[[${st1.avg >= 90 ? '수' : st1.avg >= 80 ? '우' : st1.avg >= 70 ? '미' : st1.avg >= 60 ? '양' :'가'}]]<br/>
+학생 [[${st2.name}]]의 성적 = 국어:[[${st2.kor}]], 영어:[[${st2.eng}]], 수학:[[${st2.mat}]], 총점:[[${st2.tot}]], 평균:[[${st2.avg}]], 등급:[[${st2.avg >= 90 ? '수' : st2.avg >= 80 ? '우' : st2.avg >= 70 ? '미' : st2.avg >= 60 ? '양' :'가'}]]<br/>
+학생 [[${st3.name}]]의 성적 = 국어:[[${st3.kor}]], 영어:[[${st3.eng}]], 수학:[[${st3.mat}]], 총점:[[${st3.tot}]], 평균:[[${st3.avg}]], 등급:[[${st3.avg >= 90 ? '수' : st3.avg >= 80 ? '우' : st3.avg >= 70 ? '미' : st3.avg >= 60 ? '양' :'가'}]]<br/>
+학생 [[${st4.name}]]의 성적 = 국어:[[${st4.kor}]], 영어:[[${st4.eng}]], 수학:[[${st4.mat}]], 총점:[[${st4.tot}]], 평균:[[${st4.avg}]], 등급:[[${st4.avg >= 90 ? '수' : st4.avg >= 80 ? '우' : st4.avg >= 70 ? '미' : st4.avg >= 60 ? '양' :'가'}]]<br/>
+
+</body>
+</html>

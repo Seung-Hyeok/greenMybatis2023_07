@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>link</title>
+</head>
+<body>
+<h1>link</h1>
+<a href="aaa">aaa</a>
+<a th:href="@{/bbb}">/bbb</a> <!-- 이렇게하면 절대경로로 들어오게 된다 ex) http://localhost/bbb-->
+<a th:href="@{ccc}">ccc</a> <!-- ex) http://localhost/basic/ccc-->
+<a th:href="@{|/${cate1}/${cate2}|}">|/${cate1}/${cate2}|</a>
+<a th:href="@{ddd(prod=${pp1},page=${pp2})}">ddd(prod=${pp1},page=${pp2}</a> <!-- http://localhost/basic/ddd?prod=iphone&page=23  -->
+<a th:href="@{|/${cate1}/${cate2}|(prod=${pp1},page=${pp2})}">|/${cate1}/${cate2}|(prod=${pp1},page=${pp2})</a> <!-- http://localhost/qwer/list?prod=iphone&page=23 -->
+
+
+</body>
+</html>

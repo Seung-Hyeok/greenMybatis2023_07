@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>세션로그인</title>
+</head>
+<body>
+<h1>세션로그인</h1>
+
+<th:block th:if="a=30">
+[[${session.mem.pid}]]
+ <form action="loginGo" method="post" th:object="${sessionMember}">
+ 	아이디<input type="text" name="pid" />
+ 	암호<input type="text" name="pw" />
+ 	<input type="submit" value="로그인" />
+ </form>		
+
+<%=request.getAttribute("pname") %>님 안녕하세요
+<a href="logout">로그아웃</a>
+</th:block>
+</body>
+</html>

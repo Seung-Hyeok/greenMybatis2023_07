@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>비밀번호 입력</h1>
+<form method="post">
+	<input type="text" name="pw" />
+	<input type="submit" value="확인" />
+	<a th:href="|/db/detail/${boardDTO.id}|" th:text="뒤로"/>
+</form>
+</body>
+</html>
